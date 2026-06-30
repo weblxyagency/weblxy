@@ -70,8 +70,8 @@
 
         <nav id="navmenu" class="navmenu">
           <ul>
-            <li><a href="#hero" class="active">Home</a></li>
-            <li><a href="#about">About</a></li>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
             <li class="dropdown"><a href="#services"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
                 <!-- <li><a href="#">Dropdown 1</a></li> -->
@@ -94,7 +94,7 @@
 
             <!-- <li><a href="#portfolio">Portfolio</a></li> -->
             <li><a href="casestudy.html">Cse Study</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
@@ -541,128 +541,7 @@
 
     </section><!-- /Faq Section -->
 
-    <!-- Contact Section -->
-      <section id="contact" class="contact section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p><span>Need Help?</span> <span class="description-title">Contact Us</span></p>
-      </div>
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row gy-4">
-
-          <!-- Left Side: Address Info (5 Columns) -->
-          <div class="col-lg-5">
-            <div class="info-wrap">
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
-                <i class="bi bi-geo-alt flex-shrink-0"></i>
-                <div>
-                  <h3>Address</h3>
-                  <p>Dudwindi, Kapurthala, Punjab India 144620</p>
-                </div>
-              </div>
-
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-                <i class="bi bi-telephone flex-shrink-0"></i>
-                <div>
-                  <h3>Call Us</h3>
-                  <p>+91 99156 63141</p>
-                </div>
-              </div>
-
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-                <i class="bi bi-envelope flex-shrink-0"></i>
-                <div>
-                  <h3>Email Us</h3>
-                  <p>hello@weblxy.com</p>
-                </div>
-              </div>
-
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-          </div>
-
-          <!-- Right Side: Contact Form (7 Columns) -->
-          <div class="col-lg-7">
-            <form action="https://script.google.com/macros/s/AKfycbwgoQELsXapSnymx7JannI7yulxsbfQ4CZ2aes7lurqTRuX7LaDD8U8Ozr0oFNE-rVq4Q/exec" method="POST" id="contact-form" data-aos="fade-up" data-aos-delay="200">
-              <div class="row gy-4">
-
-                <div class="col-md-6">
-                  <label for="name-field" class="pb-2">Your Name</label>
-                  <input type="text" name="name" id="name-field" class="form-control" required="">
-                </div>
-
-                <div class="col-md-6">
-                  <label for="email-field" class="pb-2">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email-field" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <label for="subject-field" class="pb-2">Subject</label>
-                  <input type="text" class="form-control" name="subject" id="subject-field" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <label for="message-field" class="pb-2">Message</label>
-                  <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-                  <div id="form-loading" style="display:none;" class="alert alert-info py-2">Sending message...</div>
-                  <div id="form-error" style="display:none;" class="alert alert-danger py-2">Something went wrong!</div>
-                  <div id="form-success" style="display:none;" class="alert alert-success py-2">Your message has been sent. Thank you!</div>
-
-                  <button type="submit" class="btn btn-primary">Send Message</button>
-                </div>
-
-              </div>
-            </form>
-
-            <script>
-              document.getElementById('contact-form').addEventListener('submit', function(e) {
-                e.preventDefault();
-                
-                const form = this;
-                const loading = document.getElementById('form-loading');
-                const error = document.getElementById('form-error');
-                const success = document.getElementById('form-success');
-                const btn = form.querySelector('button[type="submit"]');
-                
-                loading.style.display = 'block';
-                error.style.display = 'none';
-                success.style.display = 'none';
-                btn.disabled = true;
-                
-                fetch(form.action, {
-                  method: 'POST',
-                  body: new FormData(form)
-                })
-                .then(response => response.json())
-                .then(data => {
-                  loading.style.display = 'none';
-                  btn.disabled = false;
-                  if(data.result === 'success') {
-                    success.style.display = 'block';
-                    form.reset();
-                  } else {
-                    error.style.display = 'block';
-                  }
-                })
-                .catch(() => {
-                  loading.style.display = 'none';
-                  btn.disabled = false;
-                  error.style.display = 'block';
-                });
-              });
-            </script>
-          </div> <!-- End Col-lg-7 -->
-
-        </div>
-      </div>
-    </section>
-<!-- /Contact Section -->
+ 
 
   </main>
 
