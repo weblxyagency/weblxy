@@ -366,3 +366,14 @@
 .brand-logo:hover {
     transform: scale(1.03);
 }
+@media (min-width: 992px) {
+    .navbar-nav .dropdown-menu::before {
+        content: "";
+        position: absolute;
+        top: -15px; /* Gap nu cover karn layi */
+        left: 0;
+        width: 100%;
+        height: 15px;
+        background: transparent;
+    }
+}
