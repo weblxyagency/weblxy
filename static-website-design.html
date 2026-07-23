@@ -58,27 +58,22 @@
                 <li class="nav-item"><a class="nav-link fw-semibold text-dark" href="/"><i class="fa-solid fa-house" style="font-size: 13px;"></i> Home</a></li>
                 <li class="nav-item"><a class="nav-link fw-semibold text-dark" href="/about"><i class="fa-solid fa-circle-info" style="font-size: 13px;"></i> About</a></li>
                 
-                <!-- Services Nav Item with Working Mobile Submenu Toggle -->
-                <li class="nav-item dropdown" id="servicesDropdownContainer">
-                    <div class="d-flex align-items-center justify-content-between">
-                        <a class="nav-link fw-semibold text-dark flex-grow-1" href="/services">
-                            <i class="fa-solid fa-layer-group" style="font-size: 13px;"></i> Services
-                        </a>
-                        <button type="button" class="btn text-dark p-2 border-0 shadow-none" id="servicesToggleBtn" aria-label="Toggle Submenu">
-                            <i class="fa-solid fa-chevron-down" id="chevronIcon" style="font-size: 12px; transition: transform 0.3s ease;"></i>
-                        </button>
-                    </div>
-                    <ul class="dropdown-menu border-0 shadow-lg rounded-4 p-2" id="servicesSubMenu" style="display: none;" aria-labelledby="servicesDropdownContainer">
+                <!-- Standard Services Dropdown for Mobile & Desktop -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle fw-semibold text-dark" href="/services" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-layer-group" style="font-size: 13px;"></i> Services
+                    </a>
+                    <ul class="dropdown-menu border-0 shadow-lg rounded-4 p-2" aria-labelledby="servicesDropdown">
                         <li><a class="dropdown-item rounded-2 py-2" href="/website-design"><i class="fa-solid fa-laptop-code me-2 text-primary"></i> Website Design</a></li>
-                        <li><a class="dropdown-item rounded-2 py-2" href="/wordpress-website-create"><i class="fa-brands fa-wordpress me-2 text-primary"></i> WordPress Development</a></li>
-                        <li><a class="dropdown-item rounded-2 py-2" href="/dynamic-website-design"><i class="fa-solid fa-database me-2 text-primary"></i> Dynamic Web Apps</a></li>
+                        <li><a class="dropdown-item rounded-2 py-2" href="/wordpress-development"><i class="fa-brands fa-wordpress me-2 text-primary"></i> WordPress Development</a></li>
+                        <li><a class="dropdown-item rounded-2 py-2" href="/dynamic-web-apps"><i class="fa-solid fa-database me-2 text-primary"></i> Dynamic Web Apps</a></li>
                         <li><a class="dropdown-item rounded-2 py-2" href="/static-website-design"><i class="fa-solid fa-file-code me-2 text-primary"></i> Static Website Design</a></li>
-                        <li><a class="dropdown-item rounded-2 py-2" href="/seo-services"><i class="fa-solid fa-chart-pie me-2 text-primary"></i> SEO Optimization</a></li>
-                        <li><a class="dropdown-item rounded-2 py-2" href="/logo-design"><i class="fa-solid fa-pen-nib me-2 text-primary"></i> Logo Branding</a></li>
+                        <li><a class="dropdown-item rounded-2 py-2" href="/seo-optimization"><i class="fa-solid fa-chart-pie me-2 text-primary"></i> SEO Optimization</a></li>
+                        <li><a class="dropdown-item rounded-2 py-2" href="/logo-branding"><i class="fa-solid fa-pen-nib me-2 text-primary"></i> Logo Branding</a></li>
                     </ul>
                 </li>
 
-                <li class="nav-item"><a class="nav-link fw-semibold text-dark" href="/casestudy"><i class="fa-solid fa-briefcase" style="font-size: 13px;"></i> Case Study</a></li>
+                <li class="nav-item"><a class="nav-link fw-semibold text-dark" href="/case-study"><i class="fa-solid fa-briefcase" style="font-size: 13px;"></i> Case Study</a></li>
                 <li class="nav-item"><a class="nav-link fw-semibold text-dark" href="/contact"><i class="fa-solid fa-headset" style="font-size: 13px;"></i> Contact</a></li>
             </ul>
         </div>
