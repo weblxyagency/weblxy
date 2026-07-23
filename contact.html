@@ -313,38 +313,39 @@
     
 
             // Google Apps Script Form Submission Handler
-            const scriptURL = 'https://script.google.com/macros/s/AKfycbwN7Amwyp5ntYWYd_A0EMb5uCOmFbQainyUjM3Vw1rcrtby2jrVTnqr2SHW9l98rhivYw/exec';
-            const form = document.getElementById('contactForm');
-            const submitBtn = document.getElementById('submitBtn');
-            const formMessage = document.getElementById('form-message');
+          
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwN7Amwyp5ntYWYd_A0EMb5uCOmFbQainyUjM3Vw1rcrtby2jrVTnqr2SHW9l98rhivYw/exec';
+        const form = document.getElementById('contactForm');
+        const submitBtn = document.getElementById('submitBtn');
+        const formMessage = document.getElementById('form-message');
 
-            form.addEventListener('submit', e => {
-                e.preventDefault();
-                submitBtn.disabled = true;
-                submitBtn.innerHTML = 'Sending... <i class="fa-solid fa-spinner fa-spin ms-2"></i>';
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = 'Sending... <i class="fa-solid fa-spinner fa-spin ms-2"></i>';
 
-                fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                    .then(response => {
-                        formMessage.style.display = 'block';
-                        formMessage.className = 'alert alert-success py-2 small';
-                        formMessage.innerHTML = 'Thank you! Your message has been sent successfully.';
-                        form.reset();
-                        submitBtn.disabled = false;
-                        submitBtn.innerHTML = 'Send Message <i class="fa-solid fa-paper-plane ms-2"></i>';
-                        
-                        setTimeout(() => {
-                            formMessage.style.display = 'none';
-                        }, 5000);
-                    })
-                    .catch(error => {
-                        formMessage.style.display = 'block';
-                        formMessage.className = 'alert alert-danger py-2 small';
-                        formMessage.innerHTML = 'Error! Please try again later.';
-                        submitBtn.disabled = false;
-                        submitBtn.innerHTML = 'Send Message <i class="fa-solid fa-paper-plane ms-2"></i>';
-                    });
-            });
-        ;
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    formMessage.style.display = 'block';
+                    formMessage.className = 'alert alert-success py-2 small';
+                    formMessage.innerHTML = 'Thank you! Your message has been sent successfully.';
+                    form.reset();
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = 'Send Message <i class="fa-solid fa-paper-plane ms-2"></i>';
+                    
+                    setTimeout(() => {
+                        formMessage.style.display = 'none';
+                    }, 5000);
+                })
+                .catch(error => {
+                    formMessage.style.display = 'block';
+                    formMessage.className = 'alert alert-danger py-2 small';
+                    formMessage.innerHTML = 'Error! Please try again later.';
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = 'Send Message <i class="fa-solid fa-paper-plane ms-2"></i>';
+                });
+        });
+    
     </script>
 </body>
 </html>
