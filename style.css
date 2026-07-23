@@ -288,3 +288,8 @@
         display: none !important;
     }
 }
+@media (max-width: 575.98px) {
+    .top-contact-bar .d-flex.gap-2 {
+        display: none !important;
+    }
+}
