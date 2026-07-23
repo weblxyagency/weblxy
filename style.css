@@ -343,3 +343,26 @@
 .navbar .dropdown-item:hover svg {
     transform: scale(1.15); /* Icon halka jeha zoom hovega */
 }
+/* --- Brand Logo Styling --- */
+.brand-logo {
+    font-weight: 800 !important;
+    letter-spacing: -0.5px;
+    transition: transform 0.3s ease;
+}
+
+/* Logo da "Web" text color */
+.brand-logo {
+    color: #0b0f19 !important; /* Dark color */
+}
+
+/* Logo da "Lxy" gradient text effect */
+.brand-logo span {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+
+/* Hover state: jadh mouse logo utte jave */
+.brand-logo:hover {
+    transform: scale(1.03);
+}
