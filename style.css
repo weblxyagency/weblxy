@@ -279,7 +279,11 @@
     width: 24px !important;
     height: 24px !important;
     font-size: 11px !important; /* Social media icons da circle te size chhota karn layi */
-
+}
+.top-social-icon:hover {
+    background: #ffffff;
+    color: var(--top-bar-bg);
+}
 
 }
 /* Mobile screen (991px ton chhotiyan screens) te top social icons nu hide karn layi */
@@ -292,4 +296,50 @@
     .top-contact-bar .d-flex.gap-2 {
         display: none !important;
     }
+}
+/* --- Sub-Menu (Dropdown) Styling Enhancements --- */
+
+/* Sub-menu box container */
+.navbar .dropdown-menu {
+    background: #ffffff !important;
+    border: 1px solid rgba(99, 102, 241, 0.15) !important;
+    box-shadow: 0 15px 35px rgba(11, 15, 25, 0.08) !important;
+    padding: 8px !important;
+    border-radius: 14px !important;
+    margin-top: 8px !important;
+}
+
+/* Sub-menu items (Links) styling */
+.navbar .dropdown-item {
+    color: #1e293b !important;
+    font-weight: 500 !important;
+    font-size: 14px !important;
+    padding: 10px 14px !important;
+    border-radius: 8px !important;
+    transition: all 0.25s ease-in-out !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+/* Sub-menu icons color & pop effect */
+.navbar .dropdown-item i,
+.navbar .dropdown-item svg {
+    color: var(--primary-color) !important;
+    font-size: 15px !important;
+    width: 20px;
+    text-align: center;
+    margin-right: 10px !important;
+    transition: transform 0.2s ease !important;
+}
+
+/* Hover state: jadh mouse sub-menu option utte jave */
+.navbar .dropdown-item:hover {
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.08), rgba(6, 182, 212, 0.08)) !important;
+    color: var(--primary-color) !important;
+    transform: translateX(4px); /* Halka jiha right side move hovega attractive lagan layi */
+}
+
+.navbar .dropdown-item:hover i,
+.navbar .dropdown-item:hover svg {
+    transform: scale(1.15); /* Icon halka jeha zoom hovega */
 }
