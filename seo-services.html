@@ -58,27 +58,22 @@
                 <li class="nav-item"><a class="nav-link fw-semibold text-dark" href="/"><i class="fa-solid fa-house" style="font-size: 13px;"></i> Home</a></li>
                 <li class="nav-item"><a class="nav-link fw-semibold text-dark" href="/about"><i class="fa-solid fa-circle-info" style="font-size: 13px;"></i> About</a></li>
                 
-                <!-- Services Nav Item with Working Mobile Submenu Toggle -->
-                <li class="nav-item dropdown" id="servicesDropdownContainer">
-                    <div class="d-flex align-items-center justify-content-between">
-                        <a class="nav-link fw-semibold text-dark flex-grow-1" href="/services">
-                            <i class="fa-solid fa-layer-group" style="font-size: 13px;"></i> Services
-                        </a>
-                        <button type="button" class="btn text-dark p-2 border-0 shadow-none" id="servicesToggleBtn" aria-label="Toggle Submenu">
-                            <i class="fa-solid fa-chevron-down" id="chevronIcon" style="font-size: 12px; transition: transform 0.3s ease;"></i>
-                        </button>
-                    </div>
-                    <ul class="dropdown-menu border-0 shadow-lg rounded-4 p-2" id="servicesSubMenu" style="display: none;" aria-labelledby="servicesDropdownContainer">
+                <!-- Services Dropdown with Mobile Support -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle fw-semibold text-dark" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-layer-group" style="font-size: 13px;"></i> Services
+                    </a>
+                    <ul class="dropdown-menu border-0 shadow-lg rounded-4 p-2" aria-labelledby="servicesDropdown">
                         <li><a class="dropdown-item rounded-2 py-2" href="/website-design"><i class="fa-solid fa-laptop-code me-2 text-primary"></i> Website Design</a></li>
-                        <li><a class="dropdown-item rounded-2 py-2" href="/wordpress-website-create"><i class="fa-brands fa-wordpress me-2 text-primary"></i> WordPress Development</a></li>
-                        <li><a class="dropdown-item rounded-2 py-2" href="/dynamic-website-design"><i class="fa-solid fa-database me-2 text-primary"></i> Dynamic Web Apps</a></li>
+                        <li><a class="dropdown-item rounded-2 py-2" href="/wordpress-website-create"><i class="fa-brands fa-wordpress me-2 text-primary"></i> WordPress Website Create</a></li>
+                        <li><a class="dropdown-item rounded-2 py-2" href="/dynamic-website-design"><i class="fa-solid fa-database me-2 text-primary"></i> Dynamic Website Design</a></li>
                         <li><a class="dropdown-item rounded-2 py-2" href="/static-website-design"><i class="fa-solid fa-file-code me-2 text-primary"></i> Static Website Design</a></li>
-                        <li><a class="dropdown-item rounded-2 py-2" href="/seo-services"><i class="fa-solid fa-chart-pie me-2 text-primary"></i> SEO Optimization</a></li>
-                        <li><a class="dropdown-item rounded-2 py-2" href="/logo-design"><i class="fa-solid fa-pen-nib me-2 text-primary"></i> Logo Branding</a></li>
+                        <li><a class="dropdown-item rounded-2 py-2" href="/seo-services"><i class="fa-solid fa-chart-pie me-2 text-primary"></i> SEO Services</a></li>
+                        <li><a class="dropdown-item rounded-2 py-2" href="/logo-design"><i class="fa-solid fa-pen-nib me-2 text-primary"></i> Logo Deign</a></li>
                     </ul>
                 </li>
 
-                <li class="nav-item"><a class="nav-link fw-semibold text-dark" href="/casestudy"><i class="fa-solid fa-briefcase" style="font-size: 13px;"></i> Case Study</a></li>
+                <li class="nav-item"><a class="nav-link fw-semibold text-dark" href="/case-study"><i class="fa-solid fa-briefcase" style="font-size: 13px;"></i> Case Study</a></li>
                 <li class="nav-item"><a class="nav-link fw-semibold text-dark" href="/contact"><i class="fa-solid fa-headset" style="font-size: 13px;"></i> Contact</a></li>
             </ul>
         </div>
@@ -241,7 +236,7 @@
         </div>
     </section>
 
-    <!-- Modern Footer -->
+   <!-- Modern Footer with Links -->
     <footer class="site-footer">
         <div class="container">
             <div class="row g-4 mb-5">
@@ -256,20 +251,22 @@
                     <h4 class="text-white fs-6 fw-bold mb-3 pb-2 position-relative" style="border-bottom: 2px solid var(--secondary-color); display: inline-block;">Services</h4>
                     <ul class="list-unstyled small mb-0">
                         <li class="mb-2"><a href="/website-design" class="text-decoration-none text-secondary">Website Design</a></li>
-                        <li class="mb-2"><a href="/wordpress-development" class="text-decoration-none text-secondary">WordPress Development</a></li>
-                        <li class="mb-2"><a href="/dynamic-web-apps" class="text-decoration-none text-secondary">Dynamic Applications</a></li>
+                        <li class="mb-2"><a href="/wordpress-website-create" class="text-decoration-none text-secondary">WordPress Website Create</a></li>
+                        <li class="mb-2"><a href="/dynamic-website-design" class="text-decoration-none text-secondary">Dynamic Website Design</a></li>
                         <li class="mb-2"><a href="/static-website-design" class="text-decoration-none text-secondary">Static Website Design</a></li>
-                        <li class="mb-0"><a href="/seo-optimization" class="text-decoration-none text-secondary">SEO Optimization</a></li>
+                        <li class="mb-2"><a href="/seo-services" class="text-decoration-none text-secondary">SEO Services</a></li>
+                        <li class="mb-2"><a href="/Logo Design" class="text-decoration-none text-secondary">Logo Design</a></li>
                     </ul>
                 </div>
 
                 <div class="col-md-3">
-                    <h4 class="text-white fs-6 fw-bold mb-3 pb-2 position-relative" style="border-bottom: 2px solid var(--secondary-color); display: inline-block;">Legal Links</h4>
+                    <h4 class="text-white fs-6 fw-bold mb-3 pb-2 position-relative" style="border-bottom: 2px solid var(--secondary-color); display: inline-block;">Links</h4>
                     <ul class="list-unstyled small mb-0">
-                        <li class="mb-2"><a href="/about" class="text-decoration-none text-secondary">About Us</a></li>
-                        <li class="mb-2"><a href="/contact" class="text-decoration-none text-secondary">Contact Support</a></li>
-                        <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">Privacy Policy</a></li>
-                        <li class="mb-0"><a href="#" class="text-decoration-none text-secondary">Terms &amp; Conditions</a></li>
+                        <li class="mb-2"><a href="/about" class="text-decoration-none text-secondary">About</a></li>
+                        <li class="mb-2"><a href="/contact" class="text-decoration-none text-secondary">Contact</a></li>
+                        <li class="mb-2"><a href="/privacy-securty" class="text-decoration-none text-secondary">Privacy Security</a></li>
+                        <li class="mb-2"><a href="/terms-of-service" class="text-decoration-none text-secondary">Terms Of Service</a></li>
+                        <li class="mb-2"><a href="/disclaimers" class="text-decoration-none text-secondary">Disclaimers</a></li>
                     </ul>
                 </div>
 
