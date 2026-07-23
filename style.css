@@ -377,3 +377,38 @@
         background: transparent;
     }
 }
+/* Container ya social icons layi styling */
+.top-social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    margin: 0 6px;
+    background-color: #f0f2f5; /* Background color (optional) */
+    color: #333;             /* Icon color */
+    border-radius: 50%;      /* Circular shape banan layi */
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+/* Hover te Active effect */
+.top-social-icon:hover {
+    background-color: #007bff; /* Hover background color */
+    color: #fff;             /* Hover icon color */
+    transform: translateY(-2px);
+}
+
+/* Mobile Screen Layi Extra Settings */
+@media screen and (max-width: 768px) {
+    .top-social-icon {
+        width: 32px;  /* Mobile te chota size */
+        height: 32px;
+        margin: 0 4px;
+    }
+    
+    .top-social-icon svg {
+        width: 12px;  /* Mobile te SVG icon da size */
+        height: 12px;
+    }
+}
