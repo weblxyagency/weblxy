@@ -265,4 +265,20 @@
 }*/
 .top-contact-bar {
      background: linear-gradient(135deg, #6366f1, #06b6d4) !important;
+     padding-top: 6px !important;
+    padding-bottom: 6px !important;
+    font-size: 12.5px !important; /* Text size chhota karn layi */
+}
+
+.top-contact-bar i, 
+.top-contact-bar svg {
+    font-size: 11.5px !important; /* Icons da size chhota karn layi */
+}
+
+.top-social-icon {
+    width: 24px !important;
+    height: 24px !important;
+    font-size: 11px !important; /* Social media icons da circle te size chhota karn layi */
+    
+
 }
