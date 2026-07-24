@@ -23,7 +23,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
+    <div id="header-wrapper">
     <!-- External Stylesheet CSS -->
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -79,7 +79,7 @@
         </div>
     </div>
 </nav>
-
+</div>
     <!-- Hero Banner with H1 Title -->
     <section class="hero-banner py-5">
         <div class="container text-center">
@@ -242,32 +242,7 @@
    <!-- All Custom JavaScript -->
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-            // 1. Header Hide/Show on Scroll & Scroll-top Button
-            let lastScrollTop = 0;
-            const siteHeader = document.getElementById('site-header');
-            const scrollTopBtn = document.getElementById('scrollTopBtn');
-
-            window.addEventListener('scroll', function() {
-                let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-
-                if (currentScroll > lastScrollTop && currentScroll > 90) {
-                    siteHeader.style.transform = 'translateY(-100%)';
-                    siteHeader.style.transition = 'transform 0.4s ease-in-out';
-                } else {
-                    siteHeader.style.transform = 'translateY(0%)';
-                }
-                lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
-
-                if (currentScroll > 300) {
-                    scrollTopBtn.classList.add('show');
-                } else {
-                    scrollTopBtn.classList.remove('show');
-                }
-            });
-
-            scrollTopBtn.addEventListener('click', function() {
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-            });
+            
 
             // 2. Mobile Menu te Submenu Links te click karan te Menu & Submenu dono close honge
             const mainNavbar = document.getElementById("mainNavbar");

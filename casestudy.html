@@ -28,6 +28,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+<div id="header-wrapper">
 
     <!-- Top Contact Bar -->
     <div class="top-contact-bar py-2 px-4 d-flex justify-content-between align-items-center flex-wrap gap-2">
@@ -79,6 +80,7 @@
         </div>
     </div>
 </nav>
+</div>
     <!-- Hero Banner with H1 Title -->
     <section class="hero-banner">
         <div class="container">
@@ -366,34 +368,8 @@
     
      <!-- All Custom JavaScript -->
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            // 1. Header Hide/Show on Scroll & Scroll-top Button
-            let lastScrollTop = 0;
-            const siteHeader = document.getElementById('site-header');
-            const scrollTopBtn = document.getElementById('scrollTopBtn');
-
-            window.addEventListener('scroll', function() {
-                let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-
-                if (currentScroll > lastScrollTop && currentScroll > 90) {
-                    siteHeader.style.transform = 'translateY(-100%)';
-                    siteHeader.style.transition = 'transform 0.4s ease-in-out';
-                } else {
-                    siteHeader.style.transform = 'translateY(0%)';
-                }
-                lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
-
-                if (currentScroll > 300) {
-                    scrollTopBtn.classList.add('show');
-                } else {
-                    scrollTopBtn.classList.remove('show');
-                }
-            });
-
-            scrollTopBtn.addEventListener('click', function() {
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-            });
-
+       
+document.addEventListener("DOMContentLoaded", function() {
             // 2. Mobile Menu te Submenu Links te click karan te Menu & Submenu dono close honge
             const mainNavbar = document.getElementById("mainNavbar");
             const allNavLinks = document.querySelectorAll(".navbar-nav a");
