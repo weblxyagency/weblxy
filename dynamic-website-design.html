@@ -289,8 +289,31 @@
     
     <!-- All Custom JavaScript -->
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-          
+         document.addEventListener("DOMContentLoaded", function() {
+            const scrollTopBtn = document.getElementById('scrollTopBtn');
+
+window.addEventListener('scroll', function () {
+
+    if (window.scrollY > 50) {
+        document.getElementById("header-wrapper").classList.add("scrolled");
+    } else {
+        document.getElementById("header-wrapper").classList.remove("scrolled");
+    }
+
+    if (window.scrollY > 300) {
+        scrollTopBtn.classList.add('show');
+    } else {
+        scrollTopBtn.classList.remove('show');
+    }
+
+});
+
+scrollTopBtn.addEventListener('click', function () {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
             // 2. Mobile Menu te Submenu Links te click karan te Menu & Submenu dono close honge
             const mainNavbar = document.getElementById("mainNavbar");
             const allNavLinks = document.querySelectorAll(".navbar-nav a");
