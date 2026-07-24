@@ -385,8 +385,8 @@
     width: 36px;
     height: 36px;
     margin: 0 6px;
-    background-color: #f0f2f5; /* Background color (optional) */
-    color: #333;             /* Icon color */
+    /*background-color: #fff; /* Background color (optional) */*/
+    /*color: #333;             /* Icon color */*/
     border-radius: 50%;      /* Circular shape banan layi */
     text-decoration: none;
     transition: all 0.3s ease;
@@ -394,8 +394,8 @@
 
 /* Hover te Active effect */
 .top-social-icon:hover {
-    background-color: #007bff; /* Hover background color */
-    color: #fff;             /* Hover icon color */
+    /*background-color: #007bff; /* Hover background color */*/
+    color: #f0f2f5;             /* Hover icon color */
     transform: translateY(-2px);
 }
 
@@ -417,3 +417,4 @@ html, body {
   overflow-x: hidden;
   position: relative;
 }
+*/
